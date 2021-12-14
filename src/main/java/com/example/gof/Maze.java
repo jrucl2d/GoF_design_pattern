@@ -11,6 +11,9 @@ public class Maze {
     }
 
     public Room roomNo(int no) {
-        return rooms.get(no);
+        return rooms.stream()
+                .filter(r -> r.getRoomNo() == no)
+                .findFirst()
+                .orElseThrow(IllegalArgumentException::new);
     }
 }
