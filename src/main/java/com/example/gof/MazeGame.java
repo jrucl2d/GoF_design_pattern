@@ -1,12 +1,11 @@
 package com.example.gof;
 
 public class MazeGame {
-    public Maze createMaze(MazeFactory factory) {
+    public static Maze createMaze(MazeFactory factory) {
         Maze maze = factory.makeMaze();
         Room r1 = factory.makeRoom(1);
         Room r2 = factory.makeRoom(2);
         Door door = factory.makeDoor(r1, r2);
-
         maze.addRoom(r1);
         maze.addRoom(r2);
 
