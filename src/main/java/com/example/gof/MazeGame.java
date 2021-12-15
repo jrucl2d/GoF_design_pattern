@@ -1,23 +1,23 @@
 package com.example.gof;
 
 public class MazeGame {
-    public Maze createMaze() {
-        Maze maze = new Maze();
-        Room r1 = new Room(1);
-        Room r2 = new Room(2);
-        Door door = new Door(r1, r2);
+    public Maze createMaze(MazeFactory factory) {
+        Maze maze = factory.makeMaze();
+        Room r1 = factory.makeRoom(1);
+        Room r2 = factory.makeRoom(2);
+        Door door = factory.makeDoor(r1, r2);
 
         maze.addRoom(r1);
         maze.addRoom(r2);
 
-        r1.setSide(Direction.NORTH, new Wall());
+        r1.setSide(Direction.NORTH, factory.makeWall());
         r1.setSide(Direction.EAST, door);
-        r1.setSide(Direction.SOUTH, new Wall());
-        r1.setSide(Direction.WEST, new Wall());
+        r1.setSide(Direction.SOUTH, factory.makeWall());
+        r1.setSide(Direction.WEST, factory.makeWall());
 
-        r2.setSide(Direction.NORTH, new Wall());
-        r2.setSide(Direction.EAST, new Wall());
-        r2.setSide(Direction.SOUTH, new Wall());
+        r2.setSide(Direction.NORTH, factory.makeWall());
+        r2.setSide(Direction.EAST, factory.makeWall());
+        r2.setSide(Direction.SOUTH, factory.makeWall());
         r2.setSide(Direction.WEST, door);
 
         return maze;
