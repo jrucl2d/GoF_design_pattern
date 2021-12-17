@@ -35,7 +35,7 @@ public class StandardMazeBuilder implements MazeBuilder {
         Door d = new Door(r1, r2);
 
         r1.setSide(Direction.SOUTH, d);
-        r2.setSㅎide(Direction.NORTH, d);
+        r2.setSide(Direction.NORTH, d);
     }
 
     @Override
