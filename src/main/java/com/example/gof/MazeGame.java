@@ -1,11 +1,18 @@
 package com.example.gof;
 
+import java.util.stream.IntStream;
+
 public class MazeGame {
     public static Maze createMaze(MazeBuilder builder) {
         builder.buildMaze();
         builder.buildRoom(1);
         builder.buildRoom(2);
         builder.buildDoor(1, 2);
+        return builder.getMaze();
+    }
+
+    public static Maze createComplexMaze(MazeBuilder builder) {
+        IntStream.rangeClosed(1, 1001).forEach(builder::buildRoom);
         return builder.getMaze();
     }
 
