@@ -27,5 +27,6 @@ public class CountingMazeBuilder implements MazeBuilder {
     public int getCounts (int rooms, int doors) {
         this.rooms = rooms;
         this.doors = doors;
+        return this.doors + this.rooms;
     }
 }
