@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 public class CountingMazeBuilder implements MazeBuilder {
     private int doors = 0;

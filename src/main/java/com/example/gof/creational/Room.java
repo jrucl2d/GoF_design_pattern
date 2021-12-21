@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 public class Room implements MapSite {
     private final int roomNo;

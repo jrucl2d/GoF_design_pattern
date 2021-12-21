@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 public abstract class MazeFactory {
     protected Maze makeMaze() {

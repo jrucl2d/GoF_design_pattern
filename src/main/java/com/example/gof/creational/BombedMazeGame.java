@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 /**
  * MazeGame 내의 메소드들을 재정의

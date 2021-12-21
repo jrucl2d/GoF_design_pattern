@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 import java.util.ArrayList;
 import java.util.List;

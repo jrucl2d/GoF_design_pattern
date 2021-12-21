@@ -1,4 +1,4 @@
-package com.example.gof;
+package com.example.gof.creational;
 
 public class Door implements MapSite {
     private Room room1;
