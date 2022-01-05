@@ -17,3 +17,4 @@ https://green-line-a90.notion.site/Structural-Patterns-bf481081edf04deda5405c8ba
 - 컴포지트 : https://green-line-a90.notion.site/Composite-5b5539647f1f475d96689db35b8e7abd
 - 데코레이터 : https://green-line-a90.notion.site/Decorator-ceab1450c5c240a1b307dbbef67713ee
 - 파사드 : https://green-line-a90.notion.site/Facade-a1758a665106454aa5e983efb12ff812
+- 플라이급 : https://green-line-a90.notion.site/Flyweight-0d070195996b42758c671dc09fe810ba
